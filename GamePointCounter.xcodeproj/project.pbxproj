@@ -14,6 +14,12 @@
 		241F23062B1C50800051BFFE /* GamePointCounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241F23052B1C50800051BFFE /* GamePointCounterTests.swift */; };
 		241F23102B1C50800051BFFE /* GamePointCounterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241F230F2B1C50800051BFFE /* GamePointCounterUITests.swift */; };
 		241F23122B1C50800051BFFE /* GamePointCounterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241F23112B1C50800051BFFE /* GamePointCounterUITestsLaunchTests.swift */; };
+		241F23202B1C50980051BFFE /* battle_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 241F231F2B1C50980051BFFE /* battle_animation.json */; };
+		241F23222B1C50B00051BFFE /* StartingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241F23212B1C50AF0051BFFE /* StartingView.swift */; };
+		241F23242B1C50B90051BFFE /* SettingParticipantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241F23232B1C50B90051BFFE /* SettingParticipantView.swift */; };
+		241F23262B1C50BF0051BFFE /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241F23252B1C50BF0051BFFE /* LottieView.swift */; };
+		241F23282B1C50C60051BFFE /* RecordListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241F23272B1C50C60051BFFE /* RecordListView.swift */; };
+		241F232B2B1C51230051BFFE /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 241F232A2B1C51230051BFFE /* Lottie */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +50,11 @@
 		241F230B2B1C50800051BFFE /* GamePointCounterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GamePointCounterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		241F230F2B1C50800051BFFE /* GamePointCounterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePointCounterUITests.swift; sourceTree = "<group>"; };
 		241F23112B1C50800051BFFE /* GamePointCounterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePointCounterUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		241F231F2B1C50980051BFFE /* battle_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = battle_animation.json; sourceTree = "<group>"; };
+		241F23212B1C50AF0051BFFE /* StartingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartingView.swift; sourceTree = "<group>"; };
+		241F23232B1C50B90051BFFE /* SettingParticipantView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingParticipantView.swift; sourceTree = "<group>"; };
+		241F23252B1C50BF0051BFFE /* LottieView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		241F23272B1C50C60051BFFE /* RecordListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				241F232B2B1C51230051BFFE /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,8 +106,13 @@
 		241F22F32B1C507D0051BFFE /* GamePointCounter */ = {
 			isa = PBXGroup;
 			children = (
+				241F231E2B1C50970051BFFE /* Animation */,
 				241F22F42B1C507D0051BFFE /* GamePointCounterApp.swift */,
 				241F22F62B1C507D0051BFFE /* ContentView.swift */,
+				241F23212B1C50AF0051BFFE /* StartingView.swift */,
+				241F23252B1C50BF0051BFFE /* LottieView.swift */,
+				241F23232B1C50B90051BFFE /* SettingParticipantView.swift */,
+				241F23272B1C50C60051BFFE /* RecordListView.swift */,
 				241F22F82B1C50800051BFFE /* Assets.xcassets */,
 				241F22FA2B1C50800051BFFE /* Preview Content */,
 			);
@@ -127,6 +144,14 @@
 			path = GamePointCounterUITests;
 			sourceTree = "<group>";
 		};
+		241F231E2B1C50970051BFFE /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				241F231F2B1C50980051BFFE /* battle_animation.json */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +168,9 @@
 			dependencies = (
 			);
 			name = GamePointCounter;
+			packageProductDependencies = (
+				241F232A2B1C51230051BFFE /* Lottie */,
+			);
 			productName = GamePointCounter;
 			productReference = 241F22F12B1C507D0051BFFE /* GamePointCounter.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +243,9 @@
 				Base,
 			);
 			mainGroup = 241F22E82B1C507D0051BFFE;
+			packageReferences = (
+				241F23292B1C51230051BFFE /* XCRemoteSwiftPackageReference "lottie-spm" */,
+			);
 			productRefGroup = 241F22F22B1C507D0051BFFE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -231,6 +262,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				241F23202B1C50980051BFFE /* battle_animation.json in Resources */,
 				241F22FC2B1C50800051BFFE /* Preview Assets.xcassets in Resources */,
 				241F22F92B1C50800051BFFE /* Assets.xcassets in Resources */,
 			);
@@ -257,8 +289,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				241F23222B1C50B00051BFFE /* StartingView.swift in Sources */,
 				241F22F72B1C507D0051BFFE /* ContentView.swift in Sources */,
+				241F23262B1C50BF0051BFFE /* LottieView.swift in Sources */,
 				241F22F52B1C507D0051BFFE /* GamePointCounterApp.swift in Sources */,
+				241F23242B1C50B90051BFFE /* SettingParticipantView.swift in Sources */,
+				241F23282B1C50C60051BFFE /* RecordListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -588,6 +624,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		241F23292B1C51230051BFFE /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.3.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		241F232A2B1C51230051BFFE /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 241F23292B1C51230051BFFE /* XCRemoteSwiftPackageReference "lottie-spm" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 241F22E92B1C507D0051BFFE /* Project object */;
 }
