@@ -20,6 +20,12 @@
 		241F23262B1C50BF0051BFFE /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241F23252B1C50BF0051BFFE /* LottieView.swift */; };
 		241F23282B1C50C60051BFFE /* RecordListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241F23272B1C50C60051BFFE /* RecordListView.swift */; };
 		241F232B2B1C51230051BFFE /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 241F232A2B1C51230051BFFE /* Lottie */; };
+		241F232D2B1C82610051BFFE /* Participant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241F232C2B1C82610051BFFE /* Participant.swift */; };
+		241F232F2B1C82950051BFFE /* GamePoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241F232E2B1C82950051BFFE /* GamePoint.swift */; };
+		241F23312B1CA16D0051BFFE /* ActivateButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241F23302B1CA16D0051BFFE /* ActivateButtonView.swift */; };
+		241F23332B1CA1870051BFFE /* AddGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241F23322B1CA1870051BFFE /* AddGameView.swift */; };
+		247E7F282B1CBDE7009A2DFA /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247E7F272B1CBDE7009A2DFA /* Score.swift */; };
+		247E7F322B1CE4FB009A2DFA /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247E7F312B1CE4FB009A2DFA /* ResultView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +61,12 @@
 		241F23232B1C50B90051BFFE /* SettingParticipantView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingParticipantView.swift; sourceTree = "<group>"; };
 		241F23252B1C50BF0051BFFE /* LottieView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		241F23272B1C50C60051BFFE /* RecordListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordListView.swift; sourceTree = "<group>"; };
+		241F232C2B1C82610051BFFE /* Participant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Participant.swift; sourceTree = "<group>"; };
+		241F232E2B1C82950051BFFE /* GamePoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePoint.swift; sourceTree = "<group>"; };
+		241F23302B1CA16D0051BFFE /* ActivateButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivateButtonView.swift; sourceTree = "<group>"; };
+		241F23322B1CA1870051BFFE /* AddGameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddGameView.swift; sourceTree = "<group>"; };
+		247E7F272B1CBDE7009A2DFA /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
+		247E7F312B1CE4FB009A2DFA /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,13 +118,12 @@
 		241F22F32B1C507D0051BFFE /* GamePointCounter */ = {
 			isa = PBXGroup;
 			children = (
+				247E7F2E2B1CE4DC009A2DFA /* Result */,
+				247E7F2D2B1CE0CA009A2DFA /* Model */,
+				247E7F2C2B1CE0BA009A2DFA /* Start */,
 				241F231E2B1C50970051BFFE /* Animation */,
-				241F22F42B1C507D0051BFFE /* GamePointCounterApp.swift */,
-				241F22F62B1C507D0051BFFE /* ContentView.swift */,
-				241F23212B1C50AF0051BFFE /* StartingView.swift */,
-				241F23252B1C50BF0051BFFE /* LottieView.swift */,
-				241F23232B1C50B90051BFFE /* SettingParticipantView.swift */,
-				241F23272B1C50C60051BFFE /* RecordListView.swift */,
+				247E7F292B1CE064009A2DFA /* Core */,
+				247E7F2A2B1CE095009A2DFA /* Record */,
 				241F22F82B1C50800051BFFE /* Assets.xcassets */,
 				241F22FA2B1C50800051BFFE /* Preview Content */,
 			);
@@ -147,9 +158,56 @@
 		241F231E2B1C50970051BFFE /* Animation */ = {
 			isa = PBXGroup;
 			children = (
+				241F23252B1C50BF0051BFFE /* LottieView.swift */,
 				241F231F2B1C50980051BFFE /* battle_animation.json */,
 			);
 			path = Animation;
+			sourceTree = "<group>";
+		};
+		247E7F292B1CE064009A2DFA /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				241F22F42B1C507D0051BFFE /* GamePointCounterApp.swift */,
+				241F22F62B1C507D0051BFFE /* ContentView.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		247E7F2A2B1CE095009A2DFA /* Record */ = {
+			isa = PBXGroup;
+			children = (
+				241F23322B1CA1870051BFFE /* AddGameView.swift */,
+				241F23302B1CA16D0051BFFE /* ActivateButtonView.swift */,
+				241F23272B1C50C60051BFFE /* RecordListView.swift */,
+			);
+			path = Record;
+			sourceTree = "<group>";
+		};
+		247E7F2C2B1CE0BA009A2DFA /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				241F23212B1C50AF0051BFFE /* StartingView.swift */,
+				241F23232B1C50B90051BFFE /* SettingParticipantView.swift */,
+			);
+			path = Start;
+			sourceTree = "<group>";
+		};
+		247E7F2D2B1CE0CA009A2DFA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				241F232C2B1C82610051BFFE /* Participant.swift */,
+				241F232E2B1C82950051BFFE /* GamePoint.swift */,
+				247E7F272B1CBDE7009A2DFA /* Score.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		247E7F2E2B1CE4DC009A2DFA /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				247E7F312B1CE4FB009A2DFA /* ResultView.swift */,
+			);
+			path = Result;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,8 +350,14 @@
 				241F23222B1C50B00051BFFE /* StartingView.swift in Sources */,
 				241F22F72B1C507D0051BFFE /* ContentView.swift in Sources */,
 				241F23262B1C50BF0051BFFE /* LottieView.swift in Sources */,
+				241F232D2B1C82610051BFFE /* Participant.swift in Sources */,
 				241F22F52B1C507D0051BFFE /* GamePointCounterApp.swift in Sources */,
+				247E7F322B1CE4FB009A2DFA /* ResultView.swift in Sources */,
 				241F23242B1C50B90051BFFE /* SettingParticipantView.swift in Sources */,
+				241F23312B1CA16D0051BFFE /* ActivateButtonView.swift in Sources */,
+				241F232F2B1C82950051BFFE /* GamePoint.swift in Sources */,
+				241F23332B1CA1870051BFFE /* AddGameView.swift in Sources */,
+				247E7F282B1CBDE7009A2DFA /* Score.swift in Sources */,
 				241F23282B1C50C60051BFFE /* RecordListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
